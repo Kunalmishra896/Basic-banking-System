@@ -1,0 +1,242 @@
+body{
+    font-family:  'Montserrat';
+}
+
+.container-fluid{
+ padding: 3% 15% ;
+}
+
+h1 {  
+    color: #000;
+    font-family: 'Montserrat'; 
+    font-weight: 900;
+    font-size: 3rem;  
+    line-height: 1.5;
+}
+
+h3{
+ font-family: "Montserrat";
+
+ font-size: 1.5rem;  
+}
+
+
+
+h2{
+ font-family: "Montserrat";
+ font-weight: bold;
+ font-size: 3rem;  
+line-height: 1.5;
+
+}
+/* navigatioj-bar */
+
+.navbar-brand{
+
+font-family: "Ubuntu";
+font-size: 30px;
+font-weight: bold;
+
+}
+
+.image{
+    width: 100%;
+  
+}
+
+/* media Query */
+
+@media screen and (max-width: 1028px){
+
+    .image{
+    position: static;
+        transform: rotate(0);
+    }
+    
+   #title{
+        text-align: center;
+    };
+
+}
+
+
+/* Table start */
+
+.content-table{
+ border-collapse: collapse;
+ margin: 25px 230px;
+ font-size: 0.9em;
+ min-width: 400px;
+ border-radius: 5px 5px 0 0;
+ overflow: hidden;
+ box-shadow: 0 0 20px rgba(0,0,0,0.15);
+ width: 70%;
+}
+
+.content-table thead tr{
+    background-color:#6F7BD9 ;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #dddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #6F7BD9;
+}
+/* Table close */
+/* Form start */
+
+
+.form-body1{
+   background-color: #6F7BD9;
+    border-radius: 20px;
+}
+
+.form-body1 h1{
+
+    color: black;
+}
+
+.form-body2{
+     background-color: #6F7BD9;
+     border-radius: 20px;
+}
+
+.form-body2 h1{
+    color: black;
+}
+
+.form{
+    background-color: #6F7BD9;
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    border-bottom-width: 50px;
+    padding-bottom: 50px;
+
+}
+
+/* Form close */
+
+/* Button start */
+
+.formtransfer-btn{
+margin-top: 10px;
+background-color: black;
+color: white;
+border-radius: 8px;
+border-color: black;
+}
+
+.formtransfer-btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.index-button{
+    background-color: blue;
+    border-radius: 20px;
+    color: black;
+    font-weight:700;
+    font-family: "Ubuntu";
+}
+
+/* button close */
+
+/* Media query */
+
+@media only screen and (max-width: 600px) {
+  .content-table{
+      width: 500px;
+  }
+}
+
+
+/* Footer */
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

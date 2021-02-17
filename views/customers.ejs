@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Balance</th>
+                <th>View Details</th> 
+            </tr>
+            </thead>
+            <tbody>
+            <% for(let user of users){ %>
+                <tr>
+                    <td><%= user.name %></td>
+                    <td><%= user.email%></td>
+                    <td><%= user.balance%></td>
+                    <td><button class="select-btn"><a href="/customers/<%= user._id %>">Select</a></button></td>
+                </tr>
+            <% } %>
+            </tbody>
+        </table>    
+
+
+
+<%- include("partials/footer") %>

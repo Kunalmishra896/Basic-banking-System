@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+
+<div class="history-header">
+    <Center><h1>TRANSACTION HISTORY</h1></Center>
+</div>
+
+<div class='table'>
+
+    <table class="content-table">
+        <thead>
+        <tr>
+            <th>Transferred From</th>
+            <th>Transferred To</th>
+            <th>No. of Credits</th>
+        </tr>
+        </thead>
+
+    <% for(let transaction of transactions){ %>
+        <tr>
+            <td><%= transaction.fromName %></td>
+            <td><%= transaction.toName %></td>
+            <td><%= transaction.transfer %></td>
+        </tr>
+<% } %>
+    </table>
+
+</div>
+
+
+<%- include("partials/footer") %>

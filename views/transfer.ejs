@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+
+<div class="transfer-header">
+    <center><h2>Select a Person to whom you want to Transfer Money</h2></center>
+</div>
+
+    <table class="content-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Balance</th>
+            <th>Transfer</th>
+        </tr>           
+        </thead>
+    <% for(let current of users){ %>
+
+        <% if(!user._id.equals(current._id)){ %>
+            <tr>
+                <td><%= current.name %></td>
+                <td><%= current.email%></td>
+                <td><%= current.balance%></td>
+                <td><button class="transfer2-btn"><a href="/customers/<%= user._id %>/<%= current._id %>">Transfer</a></button></td>
+            </tr>
+        <% } %>
+
+    <% } %>
+    </table>    
+
+
+<%- include("partials/footer") %>
